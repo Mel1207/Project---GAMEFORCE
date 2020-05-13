@@ -17,12 +17,23 @@ body #section-1 {
   background: red;
 }
 body #section-1 #myCarousel {
-  height: 75vh;
+  height: auto;
   width: 100%;
 }
 body #section-1 #myCarousel .carousel-inner {
   width: 100%;
   height: 100%;
+}
+body #section-1 #myCarousel .carousel-inner img {
+  min-height: 40vh;
+  max-height: 78vh;
+  width: 100%;
+}
+
+#section-2 {
+  height: 100vh;
+  width: 100%;
+  background: #1f1d1d;
 }
 
 /*!
