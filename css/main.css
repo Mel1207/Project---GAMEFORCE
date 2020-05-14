@@ -11,7 +11,13 @@
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serifs !important;
+}
+body p {
+  margin-bottom: 0;
 }
 body #section-1 {
   background: red;
@@ -31,8 +37,26 @@ body #section-1 #myCarousel .carousel-inner img {
 }
 
 #section-2 {
-  height: 100vh;
+  height: auto;
   width: 100%;
+  background: #1f1d1d;
+}
+
+#section-3 {
+  height: auto;
+}
+#section-3 .row .col-md-4 {
+  padding: 0;
+}
+#section-3 .row .col-sm-12 {
+  height: 60vh;
+}
+#section-3 .row .col-sm-12 img {
+  height: 100%;
+  width: 100%;
+}
+
+#section-4 {
   background: #1f1d1d;
 }
 
