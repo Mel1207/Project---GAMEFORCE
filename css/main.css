@@ -84,6 +84,31 @@ body #section-1 #myCarousel .carousel-inner img {
   background: #2c2c2c;
 }
 
+#section-5 {
+  position: relative;
+  height: 35vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/banner-2.jpg);
+  background-attachment: fixed;
+}
+#section-5 .promo-banner {
+  position: absolute;
+  width: fit-content;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#section-5 .promo-banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #e9e9e9;
+}
+#section-5 .promo-banner a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
