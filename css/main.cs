@@ -112,16 +112,13 @@ p {
   padding: 0;
 }
 
-#section-7 .container .row .col-md-6 {
+#section-7 .container .row .col-md-4 {
   padding: 1rem;
 }
-#section-7 .container .row .col-md-6 img {
-  height: 150px;
-  width: 150px;
-  padding: 20px 0;
-}
-#section-7 .container .row .col-md-6 p {
-  font-size: 20px;
+#section-7 .container .row .col-md-4 img {
+  height: 100px;
+  width: 100px;
+  padding: 15px 0;
 }
 
 /*!
@@ -10001,4 +9998,4 @@ h3 {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.cs.map */
