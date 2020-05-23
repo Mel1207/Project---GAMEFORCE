@@ -15,28 +15,67 @@ body {
   margin: 0;
   overflow-x: hidden;
   font-family: "Poppins", sans-serifs !important;
-  background: #1f1d1d !important;
+  background: #fefefe !important;
+  color: #4B4B4B;
 }
 
 .navbar {
-  background: #1f1d1d;
+  background: #fefefe;
+}
+
+.nav-item .nav-link {
+  color: #4B4B4B;
+}
+
+.nav-top {
+  padding: 20px 10px;
+}
+.nav-top .form-search {
+  position: relative;
+}
+.nav-top .form-search input {
+  border: 1px solid #4B4B4B !important;
+  border-radius: 0;
+}
+.nav-top .form-search .logo-search {
+  position: absolute;
+  z-index: 5;
+  top: 7px;
+  right: 25px;
+  height: 25px;
+  width: 25px;
 }
 
 .nav-bot {
-  border-bottom: 2px solid #28a745;
+  border-bottom: 2px solid #2bcea8;
+}
+
+.brand-gameforce {
+  color: #2bcea8;
+  letter-spacing: 5px;
+  font-weight: bold;
 }
 
 p {
   margin-bottom: 0;
+  color: #4B4B4B;
+}
+
+.btn-sign-in {
+  background: #2bcea8 !important;
+  color: #ffffff !important;
 }
 
 .btn {
   border-radius: 0 !important;
 }
 
-#section-1 {
-  background: red;
+footer {
+  height: 50vh;
+  width: 100%;
+  background: #222222;
 }
+
 #section-1 #myCarousel {
   height: auto;
   width: 100%;
@@ -53,9 +92,13 @@ p {
 }
 
 #section-2 {
+  background: #2bcea8;
   height: auto;
   width: 100%;
-  background: #1f1d1d;
+  color: #ffffff;
+}
+#section-2 p {
+  color: #ffffff;
 }
 
 #section-3 {
@@ -72,13 +115,9 @@ p {
   width: 100%;
 }
 
-#section-4 {
-  background: #1f1d1d;
-  color: #adadad;
-}
 #section-4 .container .row .card {
   border-radius: 0;
-  background: #222222;
+  background: #fefefe;
   transition: 0.3s ease;
 }
 #section-4 .container .row .card .ratings {
@@ -91,9 +130,18 @@ p {
 #section-4 .container .row .card .ratings li i {
   color: #ffca38;
 }
+#section-4 .container .row .card .btn, #section-4 .container .row .card .btn-sm {
+  border: 2px solid #2bcea8;
+  color: #2bcea8;
+}
+#section-4 .container .row .card .btn-sm:hover, #section-4 .container .row .card .btn-group-sm > .btn:hover {
+  color: #ffffff;
+  background: #2bcea8;
+  transition: 0.3s ease;
+}
 #section-4 .container .row .card:hover {
   transform: scale(1.1);
-  background: #2c2c2c;
+  background: #ffffff;
 }
 
 #section-5 {
@@ -107,21 +155,57 @@ p {
   padding: 50px 0;
   color: #ffffff;
 }
+#section-5 .promo-banner .btn, #section-5 .promo-banner .btn-lg {
+  color: #ffffff;
+  background: #2bcea8;
+  transition: 0.3s ease;
+}
+#section-5 .promo-banner .btn-lg:hover, #section-5 .promo-banner .btn-group-lg > .btn:hover {
+  background: #4ce9c4;
+}
 
 #section-6 .row .col-md-4 {
   padding: 0;
 }
 
+#section-7 {
+  background: #f8f8f8;
+}
 #section-7 .container .row .col-md-6 {
   padding: 1rem;
 }
-#section-7 .container .row .col-md-6 img {
+#section-7 .container .row .col-md-6 div {
+  padding: 25px;
+  border: 1px solid #2bcea8;
+}
+#section-7 .container .row .col-md-6 div h3 {
+  color: #4B4B4B;
+  font-size: 35px;
+  font-weight: 600;
+}
+#section-7 .container .row .col-md-6 div img {
   height: 150px;
   width: 150px;
   padding: 20px 0;
 }
-#section-7 .container .row .col-md-6 p {
-  font-size: 20px;
+#section-7 .container .row .col-md-6 div p {
+  font-size: 18px;
+  color: #aaaaaa;
+}
+
+#section-8 {
+  height: auto;
+  background: #f8fffd;
+  padding: 20px 0;
+}
+#section-8 .row .col-img img {
+  opacity: 0.7;
+  height: 80px;
+  width: 80%;
+  margin: 10%;
+}
+#section-8 .row .col-img img:hover {
+  opacity: 1;
 }
 
 /*!
