@@ -37,6 +37,10 @@ body {
   border: 1px solid #4B4B4B !important;
   border-radius: 0;
 }
+.nav-top .form-search input:focus {
+  border-color: none;
+  box-shadow: none;
+}
 .nav-top .form-search .logo-search {
   position: absolute;
   z-index: 5;
@@ -61,19 +65,59 @@ p {
   color: #4B4B4B;
 }
 
-.btn-sign-in {
+.btn-sign-in, .btn-primary {
   background: #2bcea8 !important;
   color: #ffffff !important;
+  border-color: transparent !important;
 }
 
 .btn {
   border-radius: 0 !important;
 }
 
+.ul-links li {
+  list-style: none;
+  padding: 5px 0;
+}
+.ul-links li a {
+  color: #4B4B4B;
+}
+
 footer {
-  height: 50vh;
+  height: auto;
   width: 100%;
-  background: #222222;
+  background: #1b1b1b;
+  color: #c9c9c9;
+}
+footer .row .col-md-3 h3 {
+  padding-bottom: 30px;
+}
+footer .row .col-md-3 input {
+  border-radius: none;
+  border: 1px solid #4B4B4B;
+  background: transparent;
+}
+footer .row .col-md-3 input:focus {
+  box-shadow: none;
+  border-color: none;
+  border: 1px solid #2bcea8;
+}
+footer .footer-lower div {
+  padding: 10px 0;
+  margin: 0 auto;
+  border-top: 1px solid #3a3a3a;
+}
+footer .footer-lower span {
+  font-size: 13px;
+  color: #3a3a3a;
+}
+footer .footer-lower i {
+  float: right;
+  color: #3a3a3a;
+  font-size: 20px;
+}
+footer .footer-lower i:hover {
+  color: #616161;
 }
 
 #section-1 #myCarousel {
@@ -195,11 +239,11 @@ footer {
 
 #section-8 {
   height: auto;
-  background: #f8fffd;
+  background: #f8f8f8;
   padding: 20px 0;
 }
 #section-8 .row .col-img img {
-  opacity: 0.7;
+  opacity: 0.8;
   height: 80px;
   width: 80%;
   margin: 10%;

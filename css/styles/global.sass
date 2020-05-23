@@ -24,6 +24,10 @@ body
         input 
             border: 1px solid #4B4B4B !important
             border-radius: 0
+
+        input:focus 
+            border-color: none
+            box-shadow: none
         .logo-search
             position: absolute
             z-index: 5
@@ -42,16 +46,52 @@ p
     margin-bottom: 0
     color: #4B4B4B
 
-.btn-sign-in
+.btn-sign-in, .btn-primary
     background: #2bcea8 !important
     color: #ffffff !important
+    border-color: transparent !important
 
 .btn
     border-radius: 0 !important
 
+.ul-links
+    li
+        list-style: none
+        padding: 5px 0
+        a 
 
+            color: #4B4B4B
 
 footer 
-    height: 50vh
+    height: auto
     width: 100%
-    background: #222222
+    background: #1b1b1b
+    color: #c9c9c9
+    .row 
+        .col-md-3
+            h3
+                padding-bottom: 30px
+            
+            input 
+                border-radius: none
+                border: 1px solid #4B4B4B
+                background: transparent
+            input:focus
+                box-shadow: none
+                border-color: none
+                border: 1px solid #2bcea8
+                
+    .footer-lower
+        div
+            padding: 10px 0
+            margin: 0 auto
+            border-top: 1px solid #3a3a3a
+        span 
+            font-size: 13px
+            color: #3a3a3a
+        i 
+            float: right
+            color: #3a3a3a
+            font-size: 20px
+        i:hover 
+            color: #616161
