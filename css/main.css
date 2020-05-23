@@ -128,7 +128,6 @@ footer .footer-lower i:hover {
 #section-1 #myCarousel .carousel-inner {
   position: relative;
   width: 100%;
-  min-height: 40vh !important;
   max-height: 80vh !important;
 }
 #section-1 #myCarousel .carousel-inner img {
