@@ -94,7 +94,7 @@ footer .row .col-md-3 h3 {
   padding-bottom: 30px;
 }
 footer .row .col-md-3 input {
-  border-radius: none;
+  border-radius: 0;
   border: 1px solid #4B4B4B;
   background: transparent;
 }
@@ -140,6 +140,9 @@ footer .footer-lower i:hover {
   height: auto;
   width: 100%;
   color: #ffffff;
+}
+#section-2 .counter {
+  font-size: 55px;
 }
 #section-2 p {
   color: #ffffff;
