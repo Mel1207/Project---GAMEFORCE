@@ -305,6 +305,20 @@ footer .footer-lower i:hover {
   color: #2bcea8;
 }
 
+#section-1 {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/forum.jpg);
+  background-attachment: fixed;
+}
+#section-1 .container {
+  padding: 70px 0;
+  color: #f0f0f0;
+}
+#section-1 .container p {
+  color: #cfcfcf;
+}
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
