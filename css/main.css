@@ -83,7 +83,7 @@ p {
 
 .ul-links li {
   list-style: none;
-  padding: 5px 0;
+  padding-bottom: 10px;
 }
 .ul-links li a {
   color: #4B4B4B;
@@ -317,6 +317,47 @@ footer .footer-lower i:hover {
 }
 #section-1-forum .container p {
   color: #cfcfcf;
+}
+
+#section-2-forum .container {
+  padding: 0;
+}
+#section-2-forum .container .bar {
+  height: auto;
+  width: 100%;
+  padding: 20px 10px;
+  position: relative;
+}
+#section-2-forum .container .bar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
+}
+#section-2-forum .container .bar ul li {
+  padding: 0 10px;
+  border-right: 1px solid #444444;
+  vertical-align: baseline;
+}
+#section-2-forum .container .bar ul li a {
+  text-decoration: none;
+  color: #4B4B4B;
+  vertical-align: middle;
+}
+#section-2-forum .container .bar .btn {
+  position: absolute;
+  top: 14px;
+  right: 20px;
+}
+#section-2-forum .container .avatar {
+  width: 100%;
+  height: 150px;
+  border-radius: 50%;
+}
+#section-2-forum .container .left-bar {
+  height: 100%;
+  width: 100%;
+  background: #eeeeee;
 }
 
 /*!
