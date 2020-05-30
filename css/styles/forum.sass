@@ -12,10 +12,11 @@
             color: #cfcfcf
 
 #section-2-forum
+    position: relative
     .container
         padding: 0
         .bar
-            height: auto
+            // height: auto
             // background: #eeeeee
             width: 100%
             padding: 20px 10px
@@ -38,17 +39,54 @@
                         vertical-align: middle
                         // padding: 10px 0
                     
+                    a:hover 
+                        color: #2bcea8
+                    
             .btn
                 position: absolute
                 top: 14px
                 right: 20px
 
-        .avatar
-            width: 100%
-            height: 150px
-            border-radius: 50%
+        .content-box
+            display: flex
+            padding-bottom: 30px
+            border-bottom: 1px solid #eeeeee
 
-        .left-bar
-            height: 100%
+            .content-profile 
+                height: 110px
+                width: 130px
+                border-radius: 50%
+
+            .content-forum
+                padding: 0 20px
+    
+    .hashtag-box
+        padding: 20px 10px
+
+        .btn-primary
             width: 100%
-            background: #eeeeee
+
+        .hashtag-list 
+            margin: 0
+
+            p 
+                cursor: pointer
+                width: min-content
+                margin-bottom: 5px
+                padding: 5px 15px
+                margin: 5px 0
+            .hash1 
+                color: #ffffff
+                background: #2bcea8
+            .hash2 
+                color: #ffffff
+                background: #6ce2ff
+            .hash3 
+                color: #ffffff
+                background: #bdbdbd
+            .hash4 
+                color: #ffffff
+                background: #ffadad
+            .hash5 
+                color: #ffffff
+                background: #e1aeff
