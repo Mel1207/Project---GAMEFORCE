@@ -68,6 +68,32 @@ p
 
             color: #4B4B4B
 
+.card
+    border-radius: 0
+    background: #fefefe
+    transition: 0.3s ease
+
+    .ratings
+        display: flex
+        li 
+            list-style: none
+            padding-right: 5px
+            i 
+                color: #ffca38
+
+    .btn, .btn-sm
+        border: 2px solid #2bcea8
+        color: #2bcea8
+
+    .btn-sm:hover
+        color: #ffffff
+        background: #2bcea8
+        transition: 0.3s ease
+
+.card:hover
+    transform: scale(1.1)
+    background: #ffffff
+
 .form-group 
     position: relative
 
@@ -108,6 +134,31 @@ p
 .hash5 
     color: #ffffff
     background: #e1aeff
+
+.bar
+    width: 100%
+    padding: 20px 10px
+    position: relative
+
+    ul 
+        display: flex
+        list-style: none
+        margin: 0
+        vertical-align: middle
+
+        li 
+            padding: 0 10px
+            border-right: 1px solid #444444
+            vertical-align: baseline
+
+            a 
+                text-decoration: none
+                color: #4B4B4B
+                vertical-align: middle
+                // padding: 10px 0
+            
+            a:hover 
+                color: #2bcea8
 
 footer 
     height: auto
