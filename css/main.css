@@ -469,6 +469,32 @@ footer .footer-lower i:hover {
   background: #2bcea89f;
 }
 
+.contact-form {
+  background: linear-gradient(rgba(241, 241, 241, 0.7), rgba(161, 161, 161, 0.5));
+}
+.contact-form .right {
+  background: #2bcea8;
+}
+.contact-form .right .contact-list-details li {
+  font-size: 20px;
+  list-style: none;
+}
+.contact-form .right .contact-list-details li i {
+  font-size: 30px;
+  margin-right: 25px;
+}
+.contact-form .right .follow-links {
+  display: flex;
+}
+.contact-form .right .follow-links li {
+  list-style: none;
+  padding-right: 20px;
+}
+.contact-form .right .follow-links li img {
+  height: 30px;
+  width: 30px;
+}
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
