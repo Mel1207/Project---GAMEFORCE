@@ -37,6 +37,32 @@ body
             right: 25px
             height: 25px
             width: 25px
+        
+    .btn-cart
+        position: relative
+
+        img 
+            margin: 6px 0 !important
+            height: 25px
+
+        .hover 
+            opacity: 0
+
+        .none-hover
+            opacity: 1
+            position: absolute
+            height: 25px
+            left: 0
+            top: -6px
+
+    .btn-cart:hover 
+
+        .hover 
+            opacity: 1
+
+        .none-hover
+            opacity: 0
+            transition: 0.3s
 .nav-bot
     border-bottom: 2px solid #2bcea8
 

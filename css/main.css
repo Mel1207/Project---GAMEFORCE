@@ -50,6 +50,30 @@ body {
   height: 25px;
   width: 25px;
 }
+.nav-top .btn-cart {
+  position: relative;
+}
+.nav-top .btn-cart img {
+  margin: 6px 0 !important;
+  height: 25px;
+}
+.nav-top .btn-cart .hover {
+  opacity: 0;
+}
+.nav-top .btn-cart .none-hover {
+  opacity: 1;
+  position: absolute;
+  height: 25px;
+  left: 0;
+  top: -6px;
+}
+.nav-top .btn-cart:hover .hover {
+  opacity: 1;
+}
+.nav-top .btn-cart:hover .none-hover {
+  opacity: 0;
+  transition: 0.3s;
+}
 
 .nav-bot {
   border-bottom: 2px solid #2bcea8;
