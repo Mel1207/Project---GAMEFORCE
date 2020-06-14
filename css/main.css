@@ -126,16 +126,14 @@ p {
   overflow: hidden;
   height: 100%;
   width: 100%;
-  transform: scale(0);
-  transition: 0.2s ease;
+  transition: 0.3s ease;
 }
 
 .gallery {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .img-container:hover .overlay {
-  transform: scale(1);
   opacity: 1;
 }
 

@@ -3,9 +3,14 @@
 const windowHeight = window;
 const counters = document.querySelectorAll('.counter');
 const speed = 1500;
+const loader = document.querySelector('.loading');
+const content = document.querySelector('.content');
 
 // Load Event Listeners
 loadEventListeners();
+
+// Load All Content
+initLoad();
 
 // Event Listeners
 function loadEventListeners () {
@@ -36,6 +41,17 @@ function scrollFunc () {
             updateCount();
         });
     }
+}
+
+function initLoad () {
+    setTimeout(() => {
+        loader.style.opacity = 0;
+        loader.style.display = 'none';
+
+        content.style.display = 'block';
+        // setTimeout(() => (content.style.opacity = 1), 50);
+        content.classList.add('content-fade');
+    }, 5000);
 }
 
 
