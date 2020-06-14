@@ -111,6 +111,34 @@ p {
   color: #4B4B4B;
 }
 
+.img-container {
+  position: relative;
+}
+.img-container img {
+  display: block;
+}
+.img-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #2bcea857;
+  opacity: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  transform: scale(0);
+  transition: 0.2s ease;
+}
+
+.gallery {
+  margin: 0;
+}
+
+.img-container:hover .overlay {
+  transform: scale(1);
+  opacity: 1;
+}
+
 .card {
   border-radius: 0;
   background: #fefefe;
@@ -390,6 +418,11 @@ footer .footer-lower i:hover {
   opacity: 1;
 }
 
+@media screen and (max-width: 425px) {
+  .navbar-brand .logo-brand {
+    height: 35px !important;
+  }
+}
 #section-1 .container-left .post {
   margin-bottom: 40px;
   display: grid;
