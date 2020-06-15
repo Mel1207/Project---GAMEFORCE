@@ -13,6 +13,71 @@ body
     background: #fefefe !important
     color: #4B4B4B
 
+.content 
+    position: relative
+    height: 100vh !important
+    width: 100% !important
+    margin: 0
+    padding: 0
+    position: relative
+    overflow-x: hidden
+    z-index: -1
+
+.content-fade 
+    display: block
+    animation-name: fade-in 
+    animation-duration: 4s
+    animation-fill-mode: forwards
+
+    @keyframes fade-in
+        0%
+            opacity: 0
+        100%
+            opacity: 1
+
+.loading
+    position: relative
+    height: 100% !important
+    width: 100% !important
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F3F8FA 100%)
+    z-index: 2
+    // height: auto
+    // width: auto
+    
+    .loading-logo
+        display: flex
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+        .squareLoad 
+            margin-top: 95px
+            background: #80fab3
+            height:40px
+            width: 40px
+            animation: rotate
+            animation-duration: 2s
+            animation-iteration-count: infinite
+
+            @keyframes rotate
+                0%
+                    background: #ffffff
+                    transform: rotate(45deg)
+
+                50%
+                    background: #80fab3
+                    transform: rotate(90deg)
+
+                100% 
+                    background: #ffffff
+                    transform: rotate(380deg)
+
+        img 
+            max-height: 200px
+            max-width: 300px
+            margin-left: 10px
+
 .navbar 
     background: #fefefe
 
