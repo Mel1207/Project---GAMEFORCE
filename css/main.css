@@ -114,6 +114,14 @@ p {
 .img-container {
   position: relative;
 }
+.img-container .promo-price {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  color: #ffffff;
+  background: #f13636;
+  padding: 10px 15px;
+}
 .img-container img {
   display: block;
 }
@@ -121,16 +129,32 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  background: #2bcea857;
+  color: #ffffff;
+  font-size: 20px;
+  background: #2bcea886;
   opacity: 0;
   overflow: hidden;
   height: 100%;
   width: 100%;
   transition: 0.3s ease;
 }
+.img-container .overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img-container .overlay .text a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.img-container .overlay .text a i {
+  padding: 0 5px;
+}
 
 .gallery {
   margin: 0 !important;
+  cursor: pointer;
 }
 
 .img-container:hover .overlay {

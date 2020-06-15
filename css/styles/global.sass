@@ -93,14 +93,24 @@ p
 
 .img-container
     position: relative
+    .promo-price
+        position: absolute
+        left: 0
+        bottom: 20px
+        color: #ffffff
+        background: #f13636
+        padding: 10px 15px
+
     img
         display: block
     .overlay
         position: absolute
         top: 0
         left: 0
+        color: #ffffff
+        font-size: 20px
         // background: transparent
-        background: #2bcea857
+        background: #2bcea886
         opacity: 0
         overflow: hidden
         height: 100%
@@ -108,8 +118,21 @@ p
         // transform: scale(0)
         transition: .3s ease
 
+        .text 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+            a 
+                color: #ffffff
+                text-decoration: none
+                i 
+                    padding: 0 5px
+
 .gallery
     margin: 0 !important
+    cursor: pointer
 
 .img-container:hover 
 
