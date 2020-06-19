@@ -2,25 +2,22 @@
     margin: 0
     padding: 0 
     box-sizing: 0
-    // overflow: hidden
     scroll-behavior: smooth
 
-body 
+body
     padding: 0
     margin: 0
-    overflow-x: hidden !important
     font-family: 'Poppins', sans-serifs !important
     background: #fefefe !important
     color: #4B4B4B
 
 .content 
+    overflow: hidden
     position: relative
     height: 100vh !important
     width: 100% !important
     margin: 0
     padding: 0
-    position: relative
-    overflow-x: hidden
     z-index: -1
 
 .content-fade 
@@ -28,6 +25,8 @@ body
     animation-name: fade-in 
     animation-duration: 4s
     animation-fill-mode: forwards
+    overflow-y: scroll
+    overflow-x: hidden
 
     @keyframes fade-in
         0%
@@ -41,9 +40,7 @@ body
     width: 100% !important
     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F3F8FA 100%)
     z-index: 2
-    // height: auto
-    // width: auto
-    
+
     .loading-logo
         display: flex
         position: absolute
@@ -137,6 +134,33 @@ body
 p 
     margin-bottom: 0
     color: #4B4B4B
+
+#loginModal 
+    .modal-content
+        .modal-body 
+            .login-input
+                position: relative
+
+                input 
+                    border: none
+                    border-bottom: 1px solid #acacac
+                    border-radius: 0
+                    outline: none
+                    box-shadow: none
+                    padding-left: 30px
+
+                i 
+                    position: absolute
+                    color: #4B4B4B
+                    top: 9px
+                    left: 1px
+
+
+        button.btn-login
+            background: linear-gradient(270deg, #5CC4FF 0%, #39e2bb 100%)
+            color: #ffffff
+            
+            
 
 .btn-sign-in, .btn-primary
     background: #2bcea8 !important
