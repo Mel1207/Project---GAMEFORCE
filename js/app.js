@@ -53,8 +53,6 @@ function initLoad () {
         content.classList.add('content-fade');
     }, 5000);
 }
-
-
 // Jquery Dependencies
 $(document).ready(function () {
     $('.carousel').carousel({

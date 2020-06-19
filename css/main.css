@@ -22,12 +22,10 @@ body {
 
 .content {
   position: relative;
-  height: 100vh !important;
-  width: 100% !important;
   margin: 0;
   padding: 0;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: -1;
 }
 
@@ -36,6 +34,7 @@ body {
   animation-name: fade-in;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+  overflow: scroll;
 }
 @keyframes fade-in {
   0% {
@@ -48,10 +47,11 @@ body {
 
 .loading {
   position: relative;
-  height: 100% !important;
+  height: 100vh !important;
   width: 100% !important;
   background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F3F8FA 100%);
   z-index: 2;
+  overflow-y: hidden;
 }
 .loading .loading-logo {
   display: flex;
