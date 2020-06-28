@@ -234,13 +234,22 @@ p
     background: #fefefe
     transition: 0.3s ease
 
+.card-body 
+    padding: 1rem !important
+
     .ratings
+        margin-bottom: 5px
         display: flex
+        align-items: center
         li 
             list-style: none
             padding-right: 5px
             i 
                 color: #ffca38
+
+        li:nth-child(6)
+            font-size: 11px
+            color: #727272
 
     .btn, .btn-sm
         border: 2px solid #2bcea8
@@ -254,6 +263,15 @@ p
 .card:hover
     transform: scale(1.1)
     background: #ffffff
+
+.price 
+    margin-top: 10px
+    h5 
+        float: left
+        margin: 5px 0
+
+    a 
+        float: right
 
 .form-group 
     position: relative

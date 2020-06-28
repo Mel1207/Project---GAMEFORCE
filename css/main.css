@@ -257,21 +257,31 @@ p {
   background: #fefefe;
   transition: 0.3s ease;
 }
-.card .ratings {
-  display: flex;
+
+.card-body {
+  padding: 1rem !important;
 }
-.card .ratings li {
+.card-body .ratings {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.card-body .ratings li {
   list-style: none;
   padding-right: 5px;
 }
-.card .ratings li i {
+.card-body .ratings li i {
   color: #ffca38;
 }
-.card .btn, .card .btn-sm {
+.card-body .ratings li:nth-child(6) {
+  font-size: 11px;
+  color: #727272;
+}
+.card-body .btn, .card-body .btn-sm {
   border: 2px solid #2bcea8;
   color: #2bcea8;
 }
-.card .btn-sm:hover, .card .btn-group-sm > .btn:hover {
+.card-body .btn-sm:hover, .card-body .btn-group-sm > .btn:hover {
   color: #ffffff;
   background: #2bcea8;
   transition: 0.3s ease;
@@ -280,6 +290,17 @@ p {
 .card:hover {
   transform: scale(1.1);
   background: #ffffff;
+}
+
+.price {
+  margin-top: 10px;
+}
+.price h5 {
+  float: left;
+  margin: 5px 0;
+}
+.price a {
+  float: right;
 }
 
 .form-group {
