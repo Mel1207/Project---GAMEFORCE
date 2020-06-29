@@ -713,6 +713,26 @@ footer .footer-lower i:hover {
   width: 50px;
 }
 
+.background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #2bcea8;
+}
+.background .registration-form {
+  background: #ffffff;
+  height: auto;
+  max-width: 500px;
+}
+.background .card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
