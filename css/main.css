@@ -12,6 +12,7 @@
 }
 
 body {
+  overflow-x: hidden !important;
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serifs !important;
@@ -20,22 +21,17 @@ body {
 }
 
 .content {
-  overflow: hidden;
-  position: relative;
-  height: 100vh !important;
   width: 100% !important;
   margin: 0;
   padding: 0;
-  z-index: -1;
+  display: none;
 }
 
 .content-fade {
-  display: block;
   animation-name: fade-in;
   animation-duration: 4s;
   animation-fill-mode: forwards;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow: hidden !important;
 }
 @keyframes fade-in {
   0% {
@@ -48,7 +44,7 @@ body {
 
 .loading {
   position: relative;
-  height: 100% !important;
+  height: 100vh !important;
   width: 100% !important;
   background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F3F8FA 100%);
   z-index: 2;

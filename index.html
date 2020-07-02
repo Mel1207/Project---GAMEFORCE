@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>GAMEFORCE - Your One Stop Online Game Shop</title>
 </head>
-<body class="content">
+<body>
     <div class="loading">
         <div class="loading-logo">
             <div class="squareLoad"></div>
@@ -18,550 +18,552 @@
         </div>
     </div>
 
-    <nav class="navbar-expand-lg nav-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-6 form-search">
-                    <input type="text" class="form-control mr-sm-2" placeholder="Search...">
-                    <img src="/assets/img/logo-icons/search.svg" alt="" class="logo-search">
+    <div class="content">
+        <nav class="navbar-expand-lg nav-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 form-search">
+                        <input type="text" class="form-control mr-sm-2" placeholder="Search...">
+                        <img src="/assets/img/logo-icons/search.svg" alt="" class="logo-search">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item pl-3">
+                                    <a href="#!" class="btn btn-sign-in" data-target="#loginModal" data-toggle="modal" type="button">Sign In</a>
+                                </li>
+                                <li class="nav-item pl-3">
+                                    <a href="registration.html" class="nav-link">Sign Up</a>
+                                </li>
+                                <li class="nav-item pl-3">
+                                    <a href="" class="btn-cart">
+                                        <img src="/assets/img/logo-icons/icon-cart.svg" alt="" class="img-fluid none-hover">
+                                        <img src="/assets/img/logo-icons/icon-cart-hover.svg" alt="" class="img-fluid hover">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="loginModalLabel">Account Login</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body mx-4">
+                                    <div class="md-form py-5">
+                                        <div class="login-input">
+                                            <input type="email" id="Form-email1" class="form-control validate" placeholder="Username">
+                                            <i class="fas fa-user-alt"></i>
+                                        </div>
+                                    </div>
+                                    <div class="md-form pb-3">
+                                        <div class="login-input">
+                                            <input type="password" id="Form-pass1" class="form-control validate mb-3" placeholder="password">
+                                            <i class="fas fa-shield-alt"></i>
+                                        </div>
+                                        <p class="font-small blue-text d-flex justify-content-end">
+                                            <a href="#" class="ml-1">Forgot Password?</a>
+                                        </p>
+                                    </div>
+                                    <div class="text-center mb-3">
+                                        <button type="button" class="btn btn-login form-control">Sign in</button>
+                                    </div>
+                                    <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign inwith:</p>
+                                    <div class="row my-3 d-flex justify-content-center">
+                                        <!--Facebook-->
+                                        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a">
+                                            <img src="/assets/img/facebook.svg" alt="">
+                                        </button>
+                                        <!--Twitter-->
+                                        <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a">
+                                            <img src="/assets/img/logo-icons/Twitter.svg" alt="" height="50" width="50">
+                                        </button>
+                                        <!--Google +-->
+                                        <button type="button" class="btn btn-white btn-rounded z-depth-1a">
+                                            <img src="/assets/img/google+.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="modal-footer mx-5 pt-3 mb-1">
+                                    <p class="font-small grey-text d-flex justify-content-end">Not a member?
+                                        <a href="registration.html" class="blue-text ml-1">Sign Up</a>
+                                    </p>
+                                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="collapse navbar-collapse">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item pl-3">
-                                <a href="#!" class="btn btn-sign-in" data-target="#loginModal" data-toggle="modal" type="button">Sign In</a>
-                            </li>
-                            <li class="nav-item pl-3">
-                                <a href="registration.html" class="nav-link">Sign Up</a>
-                            </li>
-                            <li class="nav-item pl-3">
-                                <a href="" class="btn-cart">
-                                    <img src="/assets/img/logo-icons/icon-cart.svg" alt="" class="img-fluid none-hover">
-                                    <img src="/assets/img/logo-icons/icon-cart-hover.svg" alt="" class="img-fluid hover">
-                                </a>
-                            </li>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg sticky-top nav-bot">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <!-- <h1 class="brand-gameforce">GAMEFORCE</h1> -->
+                    <img src="/assets/img/logo-icons/logo-text.svg" alt="GAMEFORCE" class="img-fluid logo-brand">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-bars" style="color: #4B4B4B;"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navList">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pl-3">
+                            <a href="#section-1" class="nav-link">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown pl-3">
+                            <a href="#!" class="nav-link dropdown-toggle" id="game-link" data-toggle="dropdown">GFORCE SHOP</a>
+                            <div class="dropdown-menu" aria-labelledby="game-link">
+                                <a href="shop-1-computer.html" class="dropdown-item text-secondary">COMPUTER GAMES</a>
+                                <a href="shop-2-xbox.html" class="dropdown-item text-secondary">XBOX GAMES</a>
+                                <a href="shop-3-ps4.html" class="dropdown-item text-secondary">PS4 GAMES</a>
+                                <a href="shop-4-com-perip.html" class="dropdown-item text-secondary">GAMING PERIPHERALS</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown pl-3">
+                            <a href="#!" class="nav-link dropdown-toggle" id="dropdown-link" data-toggle="dropdown">COMMUNITY</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-link">
+                                <a href="blog.html" class="dropdown-item text-secondary">BLOG</a>
+                                <a href="forum.html" class="dropdown-item text-secondary">FORUM</a>
+                                <a href="www.facebook.com" class="dropdown-item text-secondary">ONLINE SOCIAL</a>
+                            </div>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a href="about.html" class="nav-link">ABOUT US</a>
+                        </li>
+                        <li class="nav-item pl-3">
+                            <a href="contact.html" class="nav-link">CONTACT</a>
+                        </li>
+                        <li class="nav-item pl-3 d-lg-none d-md-block">
+                            <a href="#!" class="btn btn-sign-in" data-target="#loginModal" data-toggle="modal" type="button">Sign In</a>
+                        </li>
+                        <li class="nav-item pl-3 d-lg-none d-md-block">
+                            <a href="registration.html" class="nav-link">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="section-1">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/img/caro-game-4.jpg" alt="First Slide" class="img-fluid">
+                        <div class="carousel-caption d-block d-sm-none">
+                            <h5>Game 1</h5>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, maxime?</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/caro-game-2.jpg" alt="Second Slide" class="img-fluid">
+                        <div class="carousel-caption d-block d-sm-none">
+                            <h5>Game 2</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, recusandae.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/caro-game-3.jpg" alt="Third Slide" class="img-fluid">
+                        <div class="carousel-caption d-block d-sm-none">
+                            <h5>Game 3</h5>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, vitae!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+
+        <div id="section-2">
+            <div class="container py-5">
+                <div class="row py-5" style="padding: 0;">
+                    <div class="col-md-3 col-6">
+                        <div class="text-center counter" data-target="25520">0</div>
+                        <p class="text-center">
+                            Sold Games
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="text-center counter" data-target="1530">0</div>
+                        <p class="text-center">
+                            Gaming Clients
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="text-center counter" data-target="15500">0</div>
+                        <p class="text-center">
+                            Community members
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="text-center counter" data-target="250">0</div>
+                        <p class="text-center">
+                            Branches
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-3">
+            <div class="row gallery">
+                <div class="col-md-4 img-container">
+                    <img src="/assets/img/sector-2.jpg" alt="1" class="img-fluid">
+                    <p class="promo-price">
+                        20% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-2-xbox.html">
+                                <i class="fas fa-eye"></i>
+                                <span>Go to store</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">
+                    <img src="/assets/img/sector-1.jpg" alt="2" class="img-fluid">
+                    <p class="promo-price">
+                        20% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-3-ps4.html">
+                                <i class="fas fa-eye"></i>
+                                <span>Go to store</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">
+                    <img src="/assets/img/sector-3.jpg" alt="3" class="img-fluid">
+                    <p class="promo-price">
+                        20% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-2-xbox.html">
+                                <i class="fas fa-eye"></i>
+                                <span>Go to store</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 img-container">
+                    <img src="/assets/img/promo-2.jpg" alt="Promo" class="img-fluid">
+                    <p class="promo-price">
+                        20% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-3-ps4.html">
+                                <i class="fas fa-eye"></i>
+                                <span>Go to store</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 img-container">
+                    <img src="/assets/img/promo-4.jpg" alt="Pr" class="img-fluid">
+                    <p class="promo-price">
+                        20% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-1-computer.html">
+                                <i class="fas fa-eye"></i>
+                                <span>Go to store</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-4">
+            <div class="container">
+                <h2 class="pt-5">Promo Period : <span class="text-danger">5-20-20 16:25:00</span></h2>
+                <div class="row py-5">
+                    <div class="col-md-6 col-lg-3 col-12 mb-5">
+                        <div class="card">
+                            <img src="/assets/img/product-2.jpg" alt="" class="card-img img-fluid">
+                            <div class="card-body">
+                                <ul class="ratings">
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li>(250+)</li>
+                                </ul>
+                                <Span>Fractal RGB Keyboard</Span>
+                                <div class="price" style="vertical-align: middle;">
+                                    <h5 style="float: left; vertical-align: bottom; margin: 5px 0;">$50.00</h5>
+                                    <a href="#!" style="float: right; vertical-align: middle;" class="btn btn-sm">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-12 mb-5">
+                        <div class="card">
+                            <img src="/assets/img/product-3.png" alt="" class="card-img img-fluid">
+                            <div class="card-body">
+                                <ul class="ratings">
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li>(200+)</li>
+                                </ul>
+                                <Span>Nintendo Switch Controler</Span>
+                                <div class="price" style="vertical-align: middle;">
+                                    <h5 style="float: left; vertical-align: bottom; margin: 5px 0;">$50.00</h5>
+                                    <a href="#!" style="float: right; vertical-align: middle;" class="btn btn-sm">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-12 mb-5">
+                        <div class="card">
+                            <img src="/assets/img/product-4.png" alt="" class="card-img img-fluid">
+                            <div class="card-body">
+                                <ul class="ratings">
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li>(3500+)</li>
+                                </ul>
+                                <Span>PS5 Controler</Span>
+                                <div class="price" style="vertical-align: middle;">
+                                    <h5 style="float: left; vertical-align: bottom; margin: 5px 0;">$50.00</h5>
+                                    <a href="#!" style="float: right; vertical-align: middle;" class="btn btn-sm">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-12 mb-5">
+                        <div class="card">
+                            <img src="/assets/img/product-5.png" alt="" class="card-img img-fluid">
+                            <div class="card-body">
+                                <ul class="ratings">
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li><i><i class="fas fa-star"></i></i></li>
+                                    <li>(1150+)</li>
+                                </ul>
+                                <Span>Secured x10 Headset</Span>
+                                <div class="price" style="vertical-align: middle;">
+                                    <h5 style="float: left; vertical-align: bottom; margin: 5px 0;">$50.00</h5>
+                                    <a href="#!" style="float: right; vertical-align: middle;" class="btn btn-sm">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-5">
+            <div class="promo-banner">
+                <h1>Get Big Discount up to 70% off</h1>
+                <a href="#!" class="btn btn-success btn-lg">Shop now</a>
+            </div>
+        </div>
+
+        <div id="section-6">
+            <div class="row gallery">
+                <div class="col-md-4 img-container">
+                    <img src="/assets/img/caro-game-5.jpg" alt="" class="img-fluid">
+                    <p class="promo-price">
+                        40% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-1-computer.html">
+                            <i class="fas fa-eye"></i>
+                            <span>Go to store</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">
+                    <img src="/assets/img/games-2.jpg" alt="" class="img-fluid">
+                    <p class="promo-price">
+                        70% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-1-computer.html">
+                            <i class="fas fa-eye"></i>
+                            <span>Go to store</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">
+                    <img src="/assets/img/games-3.jpg" alt="" class="img-fluid">
+                    <p class="promo-price">
+                        60% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-1-computer.html">
+                            <i class="fas fa-eye"></i>
+                            <span>Go to store</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">
+                    <img src="/assets/img/games-4.jpg" alt="" class="img-fluid">
+                    <p class="promo-price">
+                        20% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-1-computer.html">
+                            <i class="fas fa-eye"></i>
+                            <span>Go to store</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">
+                    <img src="/assets/img/games-5.jpg" alt="" class="img-fluid">
+                    <p class="promo-price">
+                        20% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-1-computer.html">
+                            <i class="fas fa-eye"></i>
+                            <span>Go to store</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 img-container">
+                    <img src="/assets/img/games-6.jpg" alt="" class="img-fluid">
+                    <p class="promo-price">
+                        40% Off
+                    </p>
+                    <div class="overlay">
+                        <div class="text">
+                            <a href="/shop-1-computer.html">
+                            <i class="fas fa-eye"></i>
+                            <span>Go to store</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-7">
+            <div class="container">
+                <h2 class="pt-5">Perks of Purchases</h2>
+                <div class="row text-light">
+                    <div class="col-md-6 mb-3">
+                        <div>
+                            <img src="/assets/img/logo-icons/step-1.svg" alt="" class="img-fluid d-block m-auto">
+                            <h3 class="text-center">Easy Purchase</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aspernatur eligendi repellendus.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div>
+                            <img src="/assets/img/logo-icons/step-3.svg" alt="" class="img-fluid d-block m-auto">
+                            <h3 class="text-center">Free Shipping</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aspernatur eligendi repellendus.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="section-8">
+            <div class="row">
+                <div class="col-4 col-sm-6 col-md-2 col-img">
+                    <img src="/assets/img/logo-game/png1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-4 col-sm-6 col-md-2 col-img">
+                    <img src="/assets/img/logo-game/png9.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-4 col-sm-6 col-md-2 col-img">
+                    <img src="/assets/img/logo-game/png3.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-4 col-sm-6 col-md-2 col-img">
+                    <img src="/assets/img/logo-game/png4.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-4 col-sm-6 col-md-2 col-img">
+                    <img src="/assets/img/logo-game/png5.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-4 col-sm-6 col-md-2 col-img">
+                    <img src="/assets/img/logo-game/png7.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer>
+            <div class="container mb-5">
+                <div class="row pt-5">
+                    <div class="col-md-3">
+                        <h3>About us</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis unde corporis inventore culpa blanditiis delectus rem voluptate</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Navigation</h3>
+                        <ul class="ul-links">
+                            <li><a href="#section-1">Home</a></li>
+                            <li><a href="#!">GFORCE Shop</a></li>
+                            <li><a href="#!">Community</a></li>
+                            <li><a href="#!">About us</a></li>
+                            <li><a href="#!">Contact Us</a></li>
                         </ul>
                     </div>
-                </div>
-
-                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="loginModalLabel">Account Login</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body mx-4">
-                                <div class="md-form py-5">
-                                    <div class="login-input">
-                                        <input type="email" id="Form-email1" class="form-control validate" placeholder="Username">
-                                        <i class="fas fa-user-alt"></i>
-                                    </div>
-                                </div>
-                                <div class="md-form pb-3">
-                                    <div class="login-input">
-                                        <input type="password" id="Form-pass1" class="form-control validate mb-3" placeholder="password">
-                                        <i class="fas fa-shield-alt"></i>
-                                    </div>
-                                    <p class="font-small blue-text d-flex justify-content-end">
-                                        <a href="#" class="ml-1">Forgot Password?</a>
-                                    </p>
-                                </div>
-                                <div class="text-center mb-3">
-                                    <button type="button" class="btn btn-login form-control">Sign in</button>
-                                </div>
-                                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign inwith:</p>
-                                <div class="row my-3 d-flex justify-content-center">
-                                    <!--Facebook-->
-                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a">
-                                        <img src="/assets/img/facebook.svg" alt="">
-                                    </button>
-                                    <!--Twitter-->
-                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a">
-                                        <img src="/assets/img/logo-icons/Twitter.svg" alt="" height="50" width="50">
-                                    </button>
-                                    <!--Google +-->
-                                    <button type="button" class="btn btn-white btn-rounded z-depth-1a">
-                                        <img src="/assets/img/google+.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="modal-footer mx-5 pt-3 mb-1">
-                                <p class="font-small grey-text d-flex justify-content-end">Not a member?
-                                    <a href="registration.html" class="blue-text ml-1">Sign Up</a>
-                                </p>
-                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button> -->
-                            </div>
-                        </div>
+                    <div class="col-md-3">
+                        <h3>Stay Update</h3>
+                        <ul class="ul-links">
+                            <li><a href="#!">Blog</a></li>
+                            <li><a href="#!">Forum</a></li>
+                            <li><a href="#!">Online Social</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Newsletter</h3>
+                        <p>Get daily news from us, <br> get updates in your favorites</p>
+                        <input type="text" class="form-control" placeholder="Enter email . . .">
+                        <a href="" class="btn btn-primary mt-3">Subscribe</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </nav>
-
-    <nav class="navbar navbar-expand-lg sticky-top nav-bot">
-        <div class="container">
-            <a href="index.html" class="navbar-brand">
-                <!-- <h1 class="brand-gameforce">GAMEFORCE</h1> -->
-                <img src="/assets/img/logo-icons/logo-text.svg" alt="GAMEFORCE" class="img-fluid logo-brand">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                <i class="fas fa-bars" style="color: #4B4B4B;"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navList">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item pl-3">
-                        <a href="#section-1" class="nav-link">HOME</a>
-                    </li>
-                    <li class="nav-item dropdown pl-3">
-                        <a href="#!" class="nav-link dropdown-toggle" id="game-link" data-toggle="dropdown">GFORCE SHOP</a>
-                        <div class="dropdown-menu" aria-labelledby="game-link">
-                            <a href="shop-1-computer.html" class="dropdown-item text-secondary">COMPUTER GAMES</a>
-                            <a href="shop-2-xbox.html" class="dropdown-item text-secondary">XBOX GAMES</a>
-                            <a href="shop-3-ps4.html" class="dropdown-item text-secondary">PS4 GAMES</a>
-                            <a href="shop-4-com-perip.html" class="dropdown-item text-secondary">GAMING PERIPHERALS</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown pl-3">
-                        <a href="#!" class="nav-link dropdown-toggle" id="dropdown-link" data-toggle="dropdown">COMMUNITY</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown-link">
-                            <a href="blog.html" class="dropdown-item text-secondary">BLOG</a>
-                            <a href="forum.html" class="dropdown-item text-secondary">FORUM</a>
-                            <a href="www.facebook.com" class="dropdown-item text-secondary">ONLINE SOCIAL</a>
-                        </div>
-                    </li>
-                    <li class="nav-item pl-3">
-                        <a href="about.html" class="nav-link">ABOUT US</a>
-                    </li>
-                    <li class="nav-item pl-3">
-                        <a href="contact.html" class="nav-link">CONTACT</a>
-                    </li>
-                    <li class="nav-item pl-3 d-lg-none d-md-block">
-                        <a href="#!" class="btn btn-sign-in" data-target="#loginModal" data-toggle="modal" type="button">Sign In</a>
-                    </li>
-                    <li class="nav-item pl-3 d-lg-none d-md-block">
-                        <a href="registration.html" class="nav-link">Sign Up</a>
-                    </li>
-                </ul>
+            <div class="container py-3 footer-lower">
+                <div></div>
+                <span>© 2020 GAMEFORCE. All Rights Reserved</span>
+                <a href="#section-1"><i class="fas fa-chevron-up"></i></a>
             </div>
-        </div>
-    </nav>
-
-    <div id="section-1">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Carousel indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for carousel items -->
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/assets/img/caro-game-4.jpg" alt="First Slide" class="img-fluid">
-                    <div class="carousel-caption d-block d-sm-none">
-                        <h5>Game 1</h5>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, maxime?</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/caro-game-2.jpg" alt="Second Slide" class="img-fluid">
-                    <div class="carousel-caption d-block d-sm-none">
-                        <h5>Game 2</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, recusandae.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/assets/img/caro-game-3.jpg" alt="Third Slide" class="img-fluid">
-                    <div class="carousel-caption d-block d-sm-none">
-                        <h5>Game 3</h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, vitae!</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Carousel controls -->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
+        </footer>
     </div>
-
-    <div id="section-2">
-        <div class="container py-5">
-            <div class="row py-5" style="padding: 0;">
-                <div class="col-md-3 col-6">
-                    <div class="text-center counter" data-target="25520">0</div>
-                    <p class="text-center">
-                        Sold Games
-                    </p>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="text-center counter" data-target="1530">0</div>
-                    <p class="text-center">
-                        Gaming Clients
-                    </p>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="text-center counter" data-target="15500">0</div>
-                    <p class="text-center">
-                        Community members
-                    </p>
-                </div>
-                <div class="col-md-3 col-6">
-                    <div class="text-center counter" data-target="250">0</div>
-                    <p class="text-center">
-                        Branches
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="section-3">
-        <div class="row gallery">
-            <div class="col-md-4 img-container">
-                <img src="/assets/img/sector-2.jpg" alt="1" class="img-fluid">
-                <p class="promo-price">
-                    20% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-2-xbox.html">
-                            <i class="fas fa-eye"></i>
-                            <span>Go to store</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="/assets/img/sector-1.jpg" alt="2" class="img-fluid">
-                <p class="promo-price">
-                    20% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-3-ps4.html">
-                            <i class="fas fa-eye"></i>
-                            <span>Go to store</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="/assets/img/sector-3.jpg" alt="3" class="img-fluid">
-                <p class="promo-price">
-                    20% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-2-xbox.html">
-                            <i class="fas fa-eye"></i>
-                            <span>Go to store</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 img-container">
-                <img src="/assets/img/promo-2.jpg" alt="Promo" class="img-fluid">
-                <p class="promo-price">
-                    20% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-3-ps4.html">
-                            <i class="fas fa-eye"></i>
-                            <span>Go to store</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 img-container">
-                <img src="/assets/img/promo-4.jpg" alt="Pr" class="img-fluid">
-                <p class="promo-price">
-                    20% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-1-computer.html">
-                            <i class="fas fa-eye"></i>
-                            <span>Go to store</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="section-4">
-        <div class="container">
-            <h2 class="pt-5">Promo Period : <span class="text-danger">5-20-20 16:25:00</span></h2>
-            <div class="row py-5">
-                <div class="col-md-6 col-lg-3 col-12 mb-5">
-                    <div class="card">
-                        <img src="/assets/img/product-2.jpg" alt="" class="card-img img-fluid">
-                        <div class="card-body">
-                            <ul class="ratings">
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li>(250+)</li>
-                            </ul>
-                            <Span>Fractal RGB Keyboard</Span>
-                            <div class="price" style="vertical-align: middle;">
-                                <h5 style="float: left; vertical-align: bottom; margin: 5px 0;">$50.00</h5>
-                                <a href="#!" style="float: right; vertical-align: middle;" class="btn btn-sm">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 col-12 mb-5">
-                    <div class="card">
-                        <img src="/assets/img/product-3.png" alt="" class="card-img img-fluid">
-                        <div class="card-body">
-                            <ul class="ratings">
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li>(200+)</li>
-                            </ul>
-                            <Span>Nintendo Switch Controler</Span>
-                            <div class="price" style="vertical-align: middle;">
-                                <h5 style="float: left; vertical-align: bottom; margin: 5px 0;">$50.00</h5>
-                                <a href="#!" style="float: right; vertical-align: middle;" class="btn btn-sm">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 col-12 mb-5">
-                    <div class="card">
-                        <img src="/assets/img/product-4.png" alt="" class="card-img img-fluid">
-                        <div class="card-body">
-                            <ul class="ratings">
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li>(3500+)</li>
-                            </ul>
-                            <Span>PS5 Controler</Span>
-                            <div class="price" style="vertical-align: middle;">
-                                <h5 style="float: left; vertical-align: bottom; margin: 5px 0;">$50.00</h5>
-                                <a href="#!" style="float: right; vertical-align: middle;" class="btn btn-sm">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 col-12 mb-5">
-                    <div class="card">
-                        <img src="/assets/img/product-5.png" alt="" class="card-img img-fluid">
-                        <div class="card-body">
-                            <ul class="ratings">
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li><i><i class="fas fa-star"></i></i></li>
-                                <li>(1150+)</li>
-                            </ul>
-                            <Span>Secured x10 Headset</Span>
-                            <div class="price" style="vertical-align: middle;">
-                                <h5 style="float: left; vertical-align: bottom; margin: 5px 0;">$50.00</h5>
-                                <a href="#!" style="float: right; vertical-align: middle;" class="btn btn-sm">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="section-5">
-        <div class="promo-banner">
-            <h1>Get Big Discount up to 70% off</h1>
-            <a href="#!" class="btn btn-success btn-lg">Shop now</a>
-        </div>
-    </div>
-
-    <div id="section-6">
-        <div class="row gallery">
-            <div class="col-md-4 img-container">
-                <img src="/assets/img/caro-game-5.jpg" alt="" class="img-fluid">
-                <p class="promo-price">
-                    40% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-1-computer.html">
-                        <i class="fas fa-eye"></i>
-                        <span>Go to store</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="/assets/img/games-2.jpg" alt="" class="img-fluid">
-                <p class="promo-price">
-                    70% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-1-computer.html">
-                        <i class="fas fa-eye"></i>
-                        <span>Go to store</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="/assets/img/games-3.jpg" alt="" class="img-fluid">
-                <p class="promo-price">
-                    60% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-1-computer.html">
-                        <i class="fas fa-eye"></i>
-                        <span>Go to store</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="/assets/img/games-4.jpg" alt="" class="img-fluid">
-                <p class="promo-price">
-                    20% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-1-computer.html">
-                        <i class="fas fa-eye"></i>
-                        <span>Go to store</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="/assets/img/games-5.jpg" alt="" class="img-fluid">
-                <p class="promo-price">
-                    20% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-1-computer.html">
-                        <i class="fas fa-eye"></i>
-                        <span>Go to store</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 img-container">
-                <img src="/assets/img/games-6.jpg" alt="" class="img-fluid">
-                <p class="promo-price">
-                    40% Off
-                </p>
-                <div class="overlay">
-                    <div class="text">
-                        <a href="/shop-1-computer.html">
-                        <i class="fas fa-eye"></i>
-                        <span>Go to store</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="section-7">
-        <div class="container">
-            <h2 class="pt-5">Perks of Purchases</h2>
-            <div class="row text-light">
-                <div class="col-md-6 mb-3">
-                    <div>
-                        <img src="/assets/img/logo-icons/step-1.svg" alt="" class="img-fluid d-block m-auto">
-                        <h3 class="text-center">Easy Purchase</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aspernatur eligendi repellendus.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 mb-3">
-                    <div>
-                        <img src="/assets/img/logo-icons/step-3.svg" alt="" class="img-fluid d-block m-auto">
-                        <h3 class="text-center">Free Shipping</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut aspernatur eligendi repellendus.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="section-8">
-        <div class="row">
-            <div class="col-4 col-sm-6 col-md-2 col-img">
-                <img src="/assets/img/logo-game/png1.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-4 col-sm-6 col-md-2 col-img">
-                <img src="/assets/img/logo-game/png9.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-4 col-sm-6 col-md-2 col-img">
-                <img src="/assets/img/logo-game/png3.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-4 col-sm-6 col-md-2 col-img">
-                <img src="/assets/img/logo-game/png4.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-4 col-sm-6 col-md-2 col-img">
-                <img src="/assets/img/logo-game/png5.png" alt="" class="img-fluid">
-            </div>
-            <div class="col-4 col-sm-6 col-md-2 col-img">
-                <img src="/assets/img/logo-game/png7.png" alt="" class="img-fluid">
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="container mb-5">
-            <div class="row pt-5">
-                <div class="col-md-3">
-                    <h3>About us</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis unde corporis inventore culpa blanditiis delectus rem voluptate</p>
-                </div>
-                <div class="col-md-3">
-                    <h3>Navigation</h3>
-                    <ul class="ul-links">
-                        <li><a href="#section-1">Home</a></li>
-                        <li><a href="#!">GFORCE Shop</a></li>
-                        <li><a href="#!">Community</a></li>
-                        <li><a href="#!">About us</a></li>
-                        <li><a href="#!">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>Stay Update</h3>
-                    <ul class="ul-links">
-                        <li><a href="#!">Blog</a></li>
-                        <li><a href="#!">Forum</a></li>
-                        <li><a href="#!">Online Social</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h3>Newsletter</h3>
-                    <p>Get daily news from us, <br> get updates in your favorites</p>
-                    <input type="text" class="form-control" placeholder="Enter email . . .">
-                    <a href="" class="btn btn-primary mt-3">Subscribe</a>
-                </div>
-            </div>
-        </div>
-        <div class="container py-3 footer-lower">
-            <div></div>
-            <span>© 2020 GAMEFORCE. All Rights Reserved</span>
-            <a href="#section-1"><i class="fas fa-chevron-up"></i></a>
-        </div>
-    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
