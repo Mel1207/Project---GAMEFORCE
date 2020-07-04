@@ -53,6 +53,7 @@ function initLoad () {
         content.classList.add('content-fade');
     }, 5000);
 }
+
 // Jquery Dependencies
 $(document).ready(function () {
     $('.carousel').carousel({
@@ -63,6 +64,15 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 2500
     });
+
+    $('#card-links a').on('click', function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    })
 });
 
+$('#card-links a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+})
 
