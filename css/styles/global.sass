@@ -78,6 +78,10 @@ body
 .nav-item 
     .nav-link
         color: #4B4B4B 
+        transition: 0.3s ease
+
+        &:hover
+            color: #2bcea8
 .nav-top
     padding: 20px 10px
     .form-search
@@ -318,6 +322,15 @@ footer
         .col-md-3
             h3
                 padding-bottom: 30px
+
+            .ul-links
+                li 
+                    a 
+                        text-decoration: none !important
+
+                        &:hover
+                            color: #2bcea8
+                            transition: 0.3s ease
             
             input 
                 border-radius: 0
@@ -341,6 +354,6 @@ footer
             color: #3a3a3a
             font-size: 20px
         i:hover 
-            color: #616161
+            color: #2bcea8
 
             
