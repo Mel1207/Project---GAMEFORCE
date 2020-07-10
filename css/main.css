@@ -534,7 +534,7 @@ footer .footer-lower i:hover {
 
 @media screen and (max-width: 768px) {
   .card-form {
-    width: 90% !important;
+    width: 70% !important;
   }
 }
 @media screen and (max-width: 460px) {
@@ -543,23 +543,7 @@ footer .footer-lower i:hover {
   }
 
   .card-form {
-    min-width: 95% !important;
-  }
-
-  .card-body h3 {
-    font-size: 1.2rem;
-  }
-
-  .col-btn a.btn {
-    font-size: 11px;
-  }
-
-  .sign-logo button {
-    margin: 0 5px;
-  }
-  .sign-logo button img {
-    height: 30px;
-    width: 30px;
+    min-width: 90% !important;
   }
 }
 @media screen and (max-width: 425px) {
@@ -720,7 +704,7 @@ footer .footer-lower i:hover {
 
 .background {
   position: relative;
-  height: auto;
+  height: 100vh;
   width: 100%;
   margin: 0;
   padding: 70px 0;
@@ -753,14 +737,11 @@ footer .footer-lower i:hover {
   width: 100%;
 }
 .background .card .login-banner h3 {
-  position: absolute;
   padding: 10px;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background: linear-gradient(117.27deg, #39E2BB 16.11%, #008DDC 98.05%);
   text-align: center;
   color: #ffffff;
+  margin-top: 170px;
 }
 .background .card .card-body {
   padding: 10px 20px !important;
