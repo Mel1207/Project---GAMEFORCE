@@ -2,11 +2,11 @@
     margin: 0
     padding: 0 
     box-sizing: 0
+    // overflow-x: hidden 
     scroll-behavior: smooth
 
 body
-    position: relative
-    overflow-x: hidden
+    overflow-x: hidden !important
     padding: 0
     margin: 0
     font-family: 'Poppins', sans-serifs !important
@@ -14,14 +14,16 @@ body
     color: #4B4B4B
 
 .content 
-    display: none
+    width: 100% !important
     margin: 0
     padding: 0
+    display: none
 
 .content-fade
     animation-name: fade-in 
     animation-duration: 4s
     animation-fill-mode: forwards
+    overflow: hidden !important
 
     @keyframes fade-in
         0%
@@ -126,7 +128,6 @@ body
             transition: 0.3s
 .nav-bot
     border-bottom: 2px solid #2bcea8
-    overflow: hidden
 
 .logo-brand
     height: 50px !important

@@ -19,7 +19,7 @@ function loadEventListeners () {
 
 function scrollFunc () {
     // const scrollable = document.documentElement - windowHeight.innerHeight
-    const section1Scroll = 500;
+    const section1Scroll = 50;
     const scrolled = window.scrollY;
 
     if (Math.ceil(scrolled) > section1Scroll) {

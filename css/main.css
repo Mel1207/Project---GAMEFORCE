@@ -12,8 +12,7 @@
 }
 
 body {
-  position: relative;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serifs !important;
@@ -22,15 +21,17 @@ body {
 }
 
 .content {
-  display: none;
+  width: 100% !important;
   margin: 0;
   padding: 0;
+  display: none;
 }
 
 .content-fade {
   animation-name: fade-in;
   animation-duration: 4s;
   animation-fill-mode: forwards;
+  overflow: hidden !important;
 }
 @keyframes fade-in {
   0% {
@@ -145,7 +146,6 @@ body {
 
 .nav-bot {
   border-bottom: 2px solid #2bcea8;
-  overflow: hidden;
 }
 
 .logo-brand {
@@ -519,10 +519,9 @@ footer .footer-lower i:hover {
   font-weight: 600;
 }
 #section-7 .container .row .col-md-6 div img {
-  height: 120px;
-  width: 120px;
+  height: 150px;
+  width: 150px;
   padding: 20px 0;
-  opacity: 0.7;
 }
 #section-7 .container .row .col-md-6 div p {
   font-size: 18px;
