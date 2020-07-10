@@ -2,13 +2,9 @@
     margin: 0
     padding: 0 
     box-sizing: 0
-    // overflow-x: hidden 
     scroll-behavior: smooth
 
 body
-    overflow-x: hidden !important
-    // overflow-y: hidden
-    // overflow: hidden !important
     padding: 0
     margin: 0
     font-family: 'Poppins', sans-serifs !important
@@ -16,16 +12,21 @@ body
     color: #4B4B4B
 
 .content 
+    overflow: hidden
+    position: relative
+    height: 100vh !important
     width: 100% !important
     margin: 0
     padding: 0
-    display: none
+    z-index: -1
 
-.content-fade
+.content-fade 
+    display: block
     animation-name: fade-in 
     animation-duration: 4s
     animation-fill-mode: forwards
-    overflow: hidden !important
+    overflow-y: scroll
+    overflow-x: hidden
 
     @keyframes fade-in
         0%
@@ -35,7 +36,7 @@ body
 
 .loading
     position: relative
-    height: 100vh !important
+    height: 100% !important
     width: 100% !important
     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F3F8FA 100%)
     z-index: 2
