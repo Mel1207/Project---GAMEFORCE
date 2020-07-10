@@ -7,6 +7,8 @@
 
 body
     overflow-x: hidden !important
+    // overflow-y: hidden
+    // overflow: hidden !important
     padding: 0
     margin: 0
     font-family: 'Poppins', sans-serifs !important
@@ -131,6 +133,33 @@ body
 p 
     margin-bottom: 0
     color: #4B4B4B
+
+#loginModal 
+    .modal-content
+        .modal-body 
+            .login-input
+                position: relative
+
+                input 
+                    border: none
+                    border-bottom: 1px solid #acacac
+                    border-radius: 0
+                    outline: none
+                    box-shadow: none
+                    padding-left: 30px
+
+                i 
+                    position: absolute
+                    color: #4B4B4B
+                    top: 9px
+                    left: 1px
+
+
+        button.btn-login
+            background: linear-gradient(270deg, #5CC4FF 0%, #39e2bb 100%)
+            color: #ffffff
+            
+            
 
 .btn-sign-in, .btn-primary
     background: #2bcea8 !important
