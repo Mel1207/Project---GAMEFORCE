@@ -636,6 +636,7 @@ footer .footer-lower i:hover {
   vertical-align: middle;
 }
 #section-1 .container-left .post .content {
+  display: block;
   vertical-align: middle;
 }
 #section-1 .container-left .post i {
