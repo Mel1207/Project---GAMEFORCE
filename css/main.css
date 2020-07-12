@@ -12,6 +12,8 @@
 }
 
 body {
+  position: relative;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serifs !important;
@@ -20,22 +22,15 @@ body {
 }
 
 .content {
-  overflow: hidden;
-  position: relative;
-  height: 100vh !important;
-  width: 100% !important;
+  display: none;
   margin: 0;
   padding: 0;
-  z-index: -1;
 }
 
 .content-fade {
-  display: block;
   animation-name: fade-in;
   animation-duration: 4s;
   animation-fill-mode: forwards;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 @keyframes fade-in {
   0% {
@@ -48,7 +43,8 @@ body {
 
 .loading {
   position: relative;
-  height: 100% !important;
+  overflow: hidden !important;
+  height: 100vh !important;
   width: 100% !important;
   background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F3F8FA 100%);
   z-index: 2;
@@ -95,6 +91,10 @@ body {
 
 .nav-item .nav-link {
   color: #4B4B4B;
+  transition: 0.3s ease;
+}
+.nav-item .nav-link:hover {
+  color: #2bcea8;
 }
 
 .nav-top {
@@ -390,6 +390,13 @@ footer {
 footer .row .col-md-3 h3 {
   padding-bottom: 30px;
 }
+footer .row .col-md-3 .ul-links li a {
+  text-decoration: none !important;
+}
+footer .row .col-md-3 .ul-links li a:hover {
+  color: #2bcea8;
+  transition: 0.3s ease;
+}
 footer .row .col-md-3 input {
   border-radius: 0;
   border: 1px solid #4B4B4B;
@@ -415,7 +422,19 @@ footer .footer-lower i {
   font-size: 20px;
 }
 footer .footer-lower i:hover {
-  color: #616161;
+  color: #2bcea8;
+}
+
+.container {
+  position: relative;
+}
+.container .toast {
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  z-index: 1400;
+  width: 350px;
+  display: none;
 }
 
 #section-1 #myCarousel {
@@ -528,9 +547,10 @@ footer .footer-lower i:hover {
   font-weight: 600;
 }
 #section-7 .container .row .col-md-6 div img {
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   padding: 20px 0;
+  opacity: 0.7;
 }
 #section-7 .container .row .col-md-6 div p {
   font-size: 18px;
@@ -553,17 +573,33 @@ footer .footer-lower i:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .registration-form {
-    min-width: 70% !important;
+  .card-form {
+    width: 90% !important;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 460px) {
   .navbar-brand .logo-brand {
     height: 35px !important;
   }
 
-  .registration-form {
-    min-width: 90% !important;
+  .card-form {
+    min-width: 95% !important;
+  }
+
+  .card-body h3 {
+    font-size: 1.2rem;
+  }
+
+  .col-btn a.btn {
+    font-size: 11px;
+  }
+
+  .sign-logo button {
+    margin: 0 5px;
+  }
+  .sign-logo button img {
+    height: 30px;
+    width: 30px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -724,32 +760,23 @@ footer .footer-lower i:hover {
 
 .background {
   position: relative;
-  height: 130vh;
+  height: auto;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 70px 0;
   background: linear-gradient(117.27deg, #39E2BB 16.11%, #008DDC 98.05%);
 }
-.background .registration-form {
+.background .card-form {
   background: #ffffff;
   height: auto;
-  max-width: 550px;
+  width: 550px;
+  margin: auto;
   box-shadow: 8px 10px 25px rgba(0, 0, 0, 0.35);
-}
-.background .card {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .background .card .login-banner {
   position: relative;
   height: 250px;
   width: 100%;
-  margin: 0;
-  padding: 0;
   background: rgba(0, 0, 0, 0.5);
 }
 .background .card .login-banner .overlay {
@@ -766,14 +793,51 @@ footer .footer-lower i:hover {
   width: 100%;
 }
 .background .card .login-banner h3 {
+  position: absolute;
   padding: 10px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: linear-gradient(117.27deg, #39E2BB 16.11%, #008DDC 98.05%);
   text-align: center;
   color: #ffffff;
-  margin-top: 170px;
+}
+.background .card .card-body {
+  padding: 10px 20px !important;
+}
+.background .card .card-body .btn-white {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.background .card .card-body .btn-login {
+  border: none;
+  color: #ffffff;
+  background: linear-gradient(117.27deg, #39E2BB 16.11%, #008DDC 98.05%);
 }
 .background .card .card-body .row .col-md-6, .background .card .card-body .row .col-md-12 {
   margin-bottom: 20px;
+}
+.background .card:hover {
+  transform: none !important;
+}
+
+.login-input {
+  position: relative;
+}
+.login-input input {
+  border: none;
+  border-bottom: 1px solid #acacac;
+  border-radius: 0;
+  outline: none;
+  box-shadow: none;
+  padding-left: 30px;
+}
+.login-input i {
+  position: absolute;
+  color: #4B4B4B;
+  top: 9px;
+  left: 1px;
 }
 
 /*!

@@ -5,28 +5,23 @@
     scroll-behavior: smooth
 
 body
+    position: relative
+    overflow-x: hidden
     padding: 0
     margin: 0
     font-family: 'Poppins', sans-serifs !important
     background: #fefefe !important
     color: #4B4B4B
 
-.content 
-    overflow: hidden
-    position: relative
-    height: 100vh !important
-    width: 100% !important
+.content
+    display: none
     margin: 0
     padding: 0
-    z-index: -1
 
 .content-fade 
-    display: block
     animation-name: fade-in 
     animation-duration: 4s
     animation-fill-mode: forwards
-    overflow-y: scroll
-    overflow-x: hidden
 
     @keyframes fade-in
         0%
@@ -36,7 +31,8 @@ body
 
 .loading
     position: relative
-    height: 100% !important
+    overflow: hidden !important
+    height: 100vh !important
     width: 100% !important
     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #F3F8FA 100%)
     z-index: 2
@@ -80,11 +76,18 @@ body
 
 .nav-item 
     .nav-link
-        color: #4B4B4B 
+        color: #4B4B4B
+        transition: 0.3s ease
+
+        &:hover
+            color: #2bcea8
+
 .nav-top
     padding: 20px 10px
+
     .form-search
         position: relative
+
         input 
             border: 1px solid #4B4B4B !important
             border-radius: 0
@@ -92,6 +95,7 @@ body
         input:focus 
             border-color: none
             box-shadow: none
+
         .logo-search
             position: absolute
             z-index: 5
@@ -125,6 +129,7 @@ body
         .none-hover
             opacity: 0
             transition: 0.3s
+
 .nav-bot
     border-bottom: 2px solid #2bcea8
 
@@ -155,13 +160,10 @@ p
                     top: 9px
                     left: 1px
 
-
         button.btn-login
             background: linear-gradient(270deg, #5CC4FF 0%, #39e2bb 100%)
             color: #ffffff
             
-            
-
 .btn-sign-in, .btn-primary
     background: #2bcea8 !important
     color: #ffffff !important
@@ -348,6 +350,15 @@ footer
         .col-md-3
             h3
                 padding-bottom: 30px
+
+            .ul-links
+                li 
+                    a 
+                        text-decoration: none !important
+
+                        &:hover
+                            color: #2bcea8
+                            transition: 0.3s ease
             
             input 
                 border-radius: 0
@@ -371,6 +382,15 @@ footer
             color: #3a3a3a
             font-size: 20px
         i:hover 
-            color: #616161
+            color: #2bcea8
 
-            
+.container 
+    position: relative
+
+    .toast
+        position: absolute
+        top: 50px
+        right: 15px
+        z-index: 1400
+        width: 350px
+        display: none

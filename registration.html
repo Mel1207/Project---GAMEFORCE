@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Import Main CSS -->
     <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <!-- GForce Web Icon -->
+    <link rel="icon" href="/assets/img/logo-icons/LOGO-ICON.png" type="img/png">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="/css/fontawesome-free-5.13.0-web/css/all.min.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -23,13 +25,16 @@
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item pl-3">
-                                <a href="#!" class="nav-link" data-target="#loginModal" data-toggle="modal" type="button">Sign In</a>
+                                <a href="registration.html" class="btn btn-sign-in">Sign In</a>
                             </li>
-                            <li class="nav-item pl-3">
-                                <a href="registration.html" class="btn btn-sign-in">Sign Up</a>
+                            <li class="nav-item pl-4">
+                                <a href="#!" class="btn-cart show-toast">
+                                    <img src="/assets/img/logo-icons/icon-wish.svg" alt="" class="img-fluid none-hover">
+                                    <img src="/assets/img/logo-icons/icon-wish-hover.svg" alt="" class="img-fluid hover">
+                                </a>
                             </li>
-                            <li class="nav-item pl-3">
-                                <a href="" class="btn-cart">
+                            <li class="nav-item pl-4">
+                                <a href="#!" class="btn-cart show-toast">
                                     <img src="/assets/img/logo-icons/icon-cart.svg" alt="" class="img-fluid none-hover">
                                     <img src="/assets/img/logo-icons/icon-cart-hover.svg" alt="" class="img-fluid hover">
                                 </a>
@@ -37,61 +42,15 @@
                         </ul>
                     </div>
                 </div>
+            </div>
 
-                <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="loginModalLabel">Account Login</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body mx-4">
-                                <div class="md-form py-5">
-                                    <div class="login-input">
-                                        <input type="email" id="Form-email1" class="form-control validate" placeholder="Username">
-                                        <i class="fas fa-user-alt"></i>
-                                    </div>
-                                </div>
-                                <div class="md-form pb-3">
-                                    <div class="login-input">
-                                        <input type="password" id="Form-pass1" class="form-control validate mb-3" placeholder="password">
-                                        <i class="fas fa-shield-alt"></i>
-                                    </div>
-                                    <p class="font-small blue-text d-flex justify-content-end">
-                                        <a href="#" class="ml-1">Forgot Password?</a>
-                                    </p>
-                                </div>
-                                <div class="text-center mb-3">
-                                    <button type="button" class="btn btn-login form-control">Sign in</button>
-                                </div>
-                                <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign inwith:</p>
-                                <div class="row my-3 d-flex justify-content-center">
-                                    <!--Facebook-->
-                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a">
-                                        <img src="/assets/img/facebook.svg" alt="">
-                                    </button>
-                                    <!--Twitter-->
-                                    <button type="button" class="btn btn-white btn-rounded mr-md-3 z-depth-1a">
-                                        <img src="/assets/img/logo-icons/Twitter.svg" alt="" height="50" width="50">
-                                    </button>
-                                    <!--Google +-->
-                                    <button type="button" class="btn btn-white btn-rounded z-depth-1a">
-                                        <img src="/assets/img/google+.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="modal-footer mx-5 pt-3 mb-1">
-                                <p class="font-small grey-text d-flex justify-content-end">Not a member?
-                                    <a href="registration.html" class="blue-text ml-1">Sign Up</a>
-                                </p>
-                                <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button> -->
-                            </div>
-                        </div>
-                    </div>
+            <div class="toast" data-autohide="false" data-delay="2500" id="myToast">
+                <div class="toast-header">
+                    <button type="button" class="close ml-auto" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="toast-body">Please Login Your Account.</div>
             </div>
         </div>
     </nav>
@@ -141,60 +100,159 @@
 
     <div class="background">
         <div class="container r-body">
-            <div class="card registration-form">
-                <div class="login-banner">
+            <div class="card card-form">
+                <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs" id="card-links" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#login" role="tab" aria-controls="login" aria-selected="true">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#registration" role="tab" aria-controls="registration" aria-selected="false">Registration</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- <div class="login-banner">
                     <div class="overlay">
                         <h3>Be one of the GAMEFORCE</h3>
-                        <!-- <p>Join our growing community, partnered with great brands and companies. Win rewards and gain friends get tips and from our experts in gaming industry.</p> -->
+                        <p>Join our growing community, partnered with great brands and companies. Win rewards and gain friends get tips and from our experts in gaming industry.</p>
                     </div>
                     <img src="/assets/img/games-4.jpg" alt="" class="img-fluid">
-                </div>
-                
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="First Name *">
-                        </div>
-                        <div class="col-md-6">
-                            <input type="text" class="form-control" placeholder="Last Name *">
-                        </div> 
-                        <div class="col-md-12">
-                            <input type="text" class="form-control" placeholder="Username *">
-                        </div>
-                        <div class="col-md-12">
-                            <input type="password" class="form-control" placeholder="Password *">
-                        </div>
-                        <div class="col-md-12">
-                            <input type="password" class="form-control" placeholder="Confirm Password *">
-                        </div>
-                        <div class="col-md-12">
-                            <input type="text" class="form-control" placeholder="Email Address *">
-                        </div>
-                        <div class="col-md-12 input-group">
-                            <select class="custom-select" id="inputGroupSelect01">
-                                <option selected>Delivery Address *</option>
-                                <option value="1">Address 1</option>
-                                <option value="1">Address 2</option>
-                                <option value="1">Address 3</option>
-                                <option value="1">Address 4</option>
-                                <option value="1">Address 5</option>
-                            </select>
-                        </div>
-                        <div class="col-md-12">
-                            <input type="checkbox" name="" id="">
-                            <label for="checkbox">Terms and Condition</label>
-                        </div>
-                        <div class="col col-btn">
-                            <a href="#!" class="btn btn-primary">Cancel</a>
-                            <a href="#!" class="btn btn-primary ml-3">Register Account</a>
-                        </div>
+                </div> -->
 
-                        
+                <div class="card-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="login" role="tabpanel"  aria-labelledby="login-tab">
+                            <h4 class="card-title text-center my-5">Account Login</h4>
+                            <div class="md-form pt-3 pb-5">
+                                <div class="login-input">
+                                    <input type="email" id="Form-email1" class="form-control validate" placeholder="Username">
+                                    <i class="fas fa-user-alt"></i>
+                                </div>
+                            </div>
+                            <div class="md-form pb-3">
+                                <div class="login-input">
+                                    <input type="password" id="Form-pass1" class="form-control validate mb-3" placeholder="password">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <p class="font-small blue-text d-flex justify-content-end">
+                                    <a href="#" class="ml-1">Forgot Password?</a>
+                                </p>
+                            </div>
+                            <div class="text-center mb-3">
+                                <button type="button" class="btn btn-login form-control">Sign in</button>
+                            </div>
+                            <p class="font-small dark-grey-text text-right d-flex justify-content-center mb-3 pt-2"> or Sign inwith:</p>
+                            <div class="row my-3 d-flex justify-content-center sign-logo">
+                                <!--Facebook-->
+                                <button type="button" class="btn-white mr-md-3 z-depth-1a">
+                                    <img src="/assets/img/facebook.svg" alt="">
+                                </button>
+                                <!--Twitter-->
+                                <button type="button" class="btn-white mr-md-3 z-depth-1a">
+                                    <img src="/assets/img/logo-icons/Twitter.svg" alt="" height="50" width="50">
+                                </button>
+                                <!--Google +-->
+                                <button type="button" class="btn-white z-depth-1a">
+                                    <img src="/assets/img/google+.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+    
+                        <div class="tab-pane" id="registration" role="tabpanel" aria-labelledby="registration-tab">
+                            <div class="row">
+
+                                <div class="login-banner mb-3">
+                                    <div class="overlay">
+                                        <h3>Be one of the GAMEFORCE</h3>
+                                    </div>
+                                    <img src="/assets/img/games-4.jpg" alt="" class="img-fluid">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="First Name *">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Last Name *">
+                                </div> 
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Username *">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" placeholder="Password *">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="password" class="form-control" placeholder="Confirm Password *">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control" placeholder="Email Address *">
+                                </div>
+                                <div class="col-md-12 input-group">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>Delivery Address *</option>
+                                        <option value="1">Address 1</option>
+                                        <option value="1">Address 2</option>
+                                        <option value="1">Address 3</option>
+                                        <option value="1">Address 4</option>
+                                        <option value="1">Address 5</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="checkbox">Terms and Condition</label>
+                                </div>
+                                <div class="col col-btn pb-3">
+                                    <a href="#!" class="btn btn-primary">Cancel</a>
+                                    <a href="#!" class="btn btn-primary ml-3">Register Account</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container mb-5">
+            <div class="row pt-5">
+                <div class="col-md-3">
+                    <h3>About us</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis unde corporis inventore culpa blanditiis delectus rem voluptate</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Navigation</h3>
+                    <ul class="ul-links">
+                        <li><a href="#section-1">Home</a></li>
+                        <li><a href="#!">GFORCE Shop</a></li>
+                        <li><a href="#!">Community</a></li>
+                        <li><a href="#!">About us</a></li>
+                        <li><a href="#!">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Stay Update</h3>
+                    <ul class="ul-links">
+                        <li><a href="#!">Blog</a></li>
+                        <li><a href="#!">Forum</a></li>
+                        <li><a href="#!">Online Social</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Newsletter</h3>
+                    <p>Get daily news from us, <br> get updates in your favorites</p>
+                    <input type="text" class="form-control" placeholder="Enter email . . .">
+                    <a href="" class="btn btn-primary mt-3">Subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="container py-3 footer-lower">
+            <div></div>
+            <span>© 2020 GAMEFORCE. All Rights Reserved</span>
+            <a href="#section-1"><i class="fas fa-chevron-up"></i></a>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

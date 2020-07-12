@@ -1,5 +1,4 @@
 // UI Vars
-// const windowHeight = window.addEventListener('scroll', scrollFunction);
 const windowHeight = window;
 const counters = document.querySelectorAll('.counter');
 const speed = 1500;
@@ -18,8 +17,7 @@ function loadEventListeners () {
 }
 
 function scrollFunc () {
-    // const scrollable = document.documentElement - windowHeight.innerHeight
-    const section1Scroll = 50;
+    const section1Scroll = 500;
     const scrolled = window.scrollY;
 
     if (Math.ceil(scrolled) > section1Scroll) {
@@ -47,12 +45,11 @@ function initLoad () {
     setTimeout(() => {
         loader.style.opacity = 0;
         loader.style.display = 'none';
-
         content.style.display = 'block';
-        // setTimeout(() => (content.style.opacity = 1), 50);
         content.classList.add('content-fade');
     }, 5000);
 }
+
 // Jquery Dependencies
 $(document).ready(function () {
     $('.carousel').carousel({
@@ -63,6 +60,22 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 2500
     });
+
+    $(".show-toast").click(function(){
+        $("#myToast").toast('show');
+    });
 });
+
+$('#card-links a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+})
+
+$(".show-toast").click(function(){
+    $("#myToast").toast('show');
+});
+
+
+
 
 

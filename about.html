@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Import Main CSS -->
     <link rel="stylesheet" href="/css/main.css" type="text/css">
+    <!-- GForce Web Icon -->
+    <link rel="icon" href="/assets/img/logo-icons/LOGO-ICON.png" type="img/png">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="/css/fontawesome-free-5.13.0-web/css/all.min.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -27,11 +29,14 @@
                             <li class="nav-item pl-3">
                                 <a href="#!" class="btn btn-sign-in">Sign In</a>
                             </li>
-                            <li class="nav-item pl-3">
-                                <a href="#!" class="nav-link">Sign Up</a>
+                            <li class="nav-item pl-4">
+                                <a href="#!" class="btn-cart show-toast">
+                                    <img src="/assets/img/logo-icons/icon-wish.svg" alt="" class="img-fluid none-hover">
+                                    <img src="/assets/img/logo-icons/icon-wish-hover.svg" alt="" class="img-fluid hover">
+                                </a>
                             </li>
-                            <li class="nav-item pl-3">
-                                <a href="" class="btn-cart">
+                            <li class="nav-item pl-4">
+                                <a href="#!" class="btn-cart show-toast">
                                     <img src="/assets/img/logo-icons/icon-cart.svg" alt="" class="img-fluid none-hover">
                                     <img src="/assets/img/logo-icons/icon-cart-hover.svg" alt="" class="img-fluid hover">
                                 </a>
@@ -39,6 +44,15 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+
+            <div class="toast" data-autohide="false" data-delay="2500" id="myToast">
+                <div class="toast-header">
+                    <button type="button" class="close ml-auto" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">Please Login Your Account.</div>
             </div>
         </div>
     </nav>
