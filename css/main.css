@@ -582,7 +582,7 @@ footer .footer-lower i:hover {
   .toast {
     position: fixed !important;
     top: 80vh !important;
-    right: 30px !important;
+    right: 50px !important;
   }
 }
 @media screen and (max-width: 768px) {
@@ -641,7 +641,7 @@ footer .footer-lower i:hover {
 
   .toast {
     position: fixed !important;
-    top: 80vh !important;
+    bottom: 7vh !important;
     right: 20px !important;
   }
 }
