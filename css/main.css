@@ -578,6 +578,9 @@ footer .footer-lower i:hover {
     float: right;
     padding-right: 20px;
   }
+  .btn-cart .none-hover {
+    top: 0px;
+  }
 
   .toast {
     position: fixed !important;
