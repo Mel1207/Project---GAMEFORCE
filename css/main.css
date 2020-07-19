@@ -861,6 +861,11 @@ footer .footer-lower i:hover {
   box-shadow: none;
   padding-left: 30px;
 }
+.login-input input:focus {
+  border-bottom: 2px solid #2bcea8;
+  outline: none;
+  box-shadow: none;
+}
 .login-input i {
   position: absolute;
   color: #4B4B4B;
