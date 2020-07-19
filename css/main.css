@@ -511,7 +511,7 @@ footer .footer-lower i:hover {
 #section-5 {
   position: relative;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/img/banner-2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/img/promo-banner.jpg);
   background-attachment: fixed;
 }
 #section-5 .promo-banner {
