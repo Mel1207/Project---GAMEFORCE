@@ -681,7 +681,7 @@ footer .footer-lower i:hover {
   background-attachment: fixed;
 }
 #section-1-forum .container {
-  padding: 70px 0;
+  padding: 70px 10px;
   color: #f0f0f0;
 }
 #section-1-forum .container p {
@@ -741,6 +741,12 @@ footer .footer-lower i:hover {
 }
 #section-2-forum .hashtag-box .btn-primary {
   width: 100%;
+}
+#section-2-forum .hashtag-box .hashtag-list h5 {
+  margin: 10px 15px;
+}
+#section-2-forum .hashtag-box .hashtag-list p {
+  margin: 10px 15px;
 }
 
 .container .break {
