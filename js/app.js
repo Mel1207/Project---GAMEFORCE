@@ -56,14 +56,14 @@ $(document).ready(function () {
         interval: 3000
     });
 
-    $('.container-reviews').slick({
-        autoplay: true,
-        autoplaySpeed: 2500
-    });
-
     $(".show-toast").click(function(){
         $("#myToast").toast('show');
     });
+});
+
+$('.container-reviews').slick({
+    autoplay: true,
+    autoplaySpeed: 2500
 });
 
 $('#card-links a').on('click', function (e) {
