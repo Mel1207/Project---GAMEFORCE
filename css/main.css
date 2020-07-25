@@ -28,6 +28,7 @@ body {
 }
 
 .content-fade {
+  overflow-x: hidden !important;
   animation-name: fade-in;
   animation-duration: 4s;
   animation-fill-mode: forwards;
@@ -646,6 +647,12 @@ footer .footer-lower i:hover {
     position: fixed !important;
     bottom: 7vh !important;
     right: 20px !important;
+  }
+
+  .toast.show {
+    left: 50%;
+    transform: translateX(-50%) !important;
+    width: 300px !important;
   }
 }
 #section-1 .container-left .post {
