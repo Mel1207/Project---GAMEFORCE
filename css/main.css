@@ -672,8 +672,6 @@ footer .footer-lower i:hover {
 
   .toast {
     position: fixed !important;
-    bottom: 7vh !important;
-    right: 20px !important;
   }
 
   .toast.show {
