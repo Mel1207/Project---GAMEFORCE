@@ -13,7 +13,7 @@
 
 body {
   position: relative;
-  overflow-x: hidden;
+  max-width: 100%;
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serifs !important;
@@ -28,6 +28,7 @@ body {
 }
 
 .content-fade {
+  position: relative;
   overflow-x: hidden !important;
   animation-name: fade-in;
   animation-duration: 4s;
@@ -98,21 +99,24 @@ body {
   color: #2bcea8;
 }
 
-.nav-top {
+#nav-top {
   padding: 20px 10px;
+  overflow: hidden !important;
+  opacity: 0;
+  display: none;
 }
-.nav-top .form-search {
+#nav-top .form-search {
   position: relative;
 }
-.nav-top .form-search input {
+#nav-top .form-search input {
   border: 1px solid #4B4B4B !important;
   border-radius: 0;
 }
-.nav-top .form-search input:focus {
+#nav-top .form-search input:focus {
   border-color: none;
   box-shadow: none;
 }
-.nav-top .form-search .logo-search {
+#nav-top .form-search .logo-search {
   position: absolute;
   z-index: 5;
   top: 7px;
@@ -146,8 +150,10 @@ body {
   transition: 0.3s;
 }
 
-.nav-bot {
+#nav-bot {
   border-bottom: 2px solid #2bcea8;
+  opacity: 0;
+  display: none;
 }
 
 .logo-brand {
@@ -158,6 +164,16 @@ body {
 p {
   margin-bottom: 0;
   color: #4B4B4B;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+button:focus {
+  outline: none !important;
+  border: none !important;
 }
 
 #loginModal .modal-content .modal-body .login-input {
@@ -430,11 +446,13 @@ footer .footer-lower i:hover {
 .container {
   position: relative;
 }
-.container .toast {
+
+.toast {
   position: absolute;
-  top: 50px;
+  top: 0;
+  overflow: hidden !important;
   right: 15px;
-  z-index: 1400;
+  z-index: 5400 !important;
   width: 350px;
   display: none;
 }
@@ -585,7 +603,7 @@ footer .footer-lower i:hover {
 
   .toast {
     position: fixed !important;
-    top: 80vh !important;
+    top: 85vh !important;
     right: 50px !important;
   }
 }
@@ -597,6 +615,11 @@ footer .footer-lower i:hover {
 @media screen and (max-width: 600px) {
   .card:hover {
     transform: none !important;
+  }
+
+  footer .row .col-md-3 h3 {
+    margin-top: 10px !important;
+    padding-bottom: 0 !important;
   }
 }
 @media screen and (max-width: 460px) {
@@ -625,6 +648,10 @@ footer .footer-lower i:hover {
   }
 }
 @media screen and (max-width: 425px) {
+  .nav-top {
+    overflow: hidden !important;
+  }
+
   .loading .squareLoad {
     margin-top: 65px !important;
     height: 27px !important;
@@ -774,11 +801,11 @@ footer .footer-lower i:hover {
 .contact-form .right .contact-list-details li i {
   color: #2bcea8;
   vertical-align: middle;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 25px;
+  padding: 8px;
 }
 .contact-form .right .contact-list-details li span {
-  margin-left: 5px;
+  font-size: 16px;
   vertical-align: middle;
   color: #4B4B4B;
 }

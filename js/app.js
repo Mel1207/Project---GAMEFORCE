@@ -4,6 +4,8 @@ const counters = document.querySelectorAll('.counter');
 const speed = 1500;
 const loader = document.querySelector('.loading');
 const content = document.querySelector('.content');
+const navTop = document.querySelector('#nav-top');
+const navBot = document.querySelector('#nav-bot');
 
 // Load Event Listeners
 loadEventListeners();
@@ -46,6 +48,10 @@ function initLoad () {
         loader.style.opacity = 0;
         loader.style.display = 'none';
         content.style.display = 'block';
+        navTop.style.opacity = 1;
+        navTop.style.display = 'block';
+        navBot.style.opacity = 1;
+        navBot.style.display = 'block';
         content.classList.add('content-fade');
     }, 5000);
 }
@@ -61,19 +67,14 @@ $(document).ready(function () {
     });
 });
 
-$('.container-reviews').slick({
-    autoplay: true,
-    autoplaySpeed: 2500
-});
-
 $('#card-links a').on('click', function (e) {
     e.preventDefault()
     $(this).tab('show')
 })
 
-$(".show-toast").click(function(){
-    $("#myToast").toast('show');
-});
+// $(".show-toast").click(function(){
+//     $("#myToast").toast('show');
+// });
 
 
 

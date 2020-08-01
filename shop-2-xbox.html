@@ -20,101 +20,104 @@
         </div>
     </div>
 
-    <div class="content">
-        <nav class="navbar-expand-lg nav-top" id="nav-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-6 form-search">
-                        <input type="text" class="form-control mr-sm-2" placeholder="Search...">
-                        <img src="/assets/img/logo-icons/search.svg" alt="" class="logo-search">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item pl-3">
-                                    <a href="registration.html" class="btn btn-sign-in">Sign In</a>
-                                </li>
-                                <li class="nav-item pl-4">
-                                    <a href="#!" class="btn-cart show-toast">
-                                        <img src="/assets/img/logo-icons/icon-wish.svg" alt="" class="img-fluid none-hover">
-                                        <img src="/assets/img/logo-icons/icon-wish-hover.svg" alt="" class="img-fluid hover">
-                                    </a>
-                                </li>
-                                <li class="nav-item pl-4">
-                                    <a href="#!" class="btn-cart show-toast">
-                                        <img src="/assets/img/logo-icons/icon-cart.svg" alt="" class="img-fluid none-hover">
-                                        <img src="/assets/img/logo-icons/icon-cart-hover.svg" alt="" class="img-fluid hover">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+    <nav class="navbar-expand-lg nav-top" id="nav-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 form-search">
+                    <input type="text" class="form-control mr-sm-2" placeholder="Search...">
+                    <img src="/assets/img/logo-icons/search.svg" alt="" class="logo-search">
                 </div>
-
-                <div class="toast" data-autohide="true" data-delay="2500" id="myToast">
-                    <div class="toast-header">
-                        <button type="button" class="close ml-auto" data-dismiss="toast" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                <div class="col-md-6">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item pl-3">
+                                <a href="registration.html" class="btn btn-sign-in">Sign In</a>
+                            </li>
+                            <li class="nav-item pl-4">
+                                <a href="#!" class="btn-cart show-toast">
+                                    <img src="/assets/img/logo-icons/icon-wish.svg" alt="" class="img-fluid none-hover">
+                                    <img src="/assets/img/logo-icons/icon-wish-hover.svg" alt="" class="img-fluid hover">
+                                </a>
+                            </li>
+                            <li class="nav-item pl-4">
+                                <a href="#!" class="btn-cart show-toast">
+                                    <img src="/assets/img/logo-icons/icon-cart.svg" alt="" class="img-fluid none-hover">
+                                    <img src="/assets/img/logo-icons/icon-cart-hover.svg" alt="" class="img-fluid hover">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="toast-body">Please Login Your Account.</div>
                 </div>
             </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg sticky-top nav-bot">
-            <div class="container">
-                <a href="index.html" class="navbar-brand">
-                    <!-- <h1 class="brand-gameforce">GAMEFORCE</h1> -->
-                    <img src="/assets/img/logo-icons/logo-text.svg" alt="GAMEFORCE" class="img-fluid logo-brand">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
-                    <!-- <span class="navbar-toggler-icon"></span> -->
-                    <i class="fas fa-bars" style="color: #4B4B4B;"></i>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="toast toast-lg" data-autohide="true" data-delay="1300" id="myToast">
+            <div class="toast-header">
+                <button type="button" class="close ml-auto" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
                 </button>
-                <div class="collapse navbar-collapse" id="navList">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item pl-3">
-                            <a href="index.html" class="nav-link">HOME</a>
-                        </li>
-                        <li class="nav-item dropdown pl-3">
-                            <a href="#!" class="nav-link dropdown-toggle" id="game-link" data-toggle="dropdown">GFORCE SHOP</a>
-                            <div class="dropdown-menu" aria-labelledby="game-link">
-                                <a href="shop-1-computer.html" class="dropdown-item text-secondary">COMPUTER GAMES</a>
-                                <a href="shop-2-xbox.html" class="dropdown-item text-secondary">XBOX GAMES</a>
-                                <a href="shop-3-ps4.html" class="dropdown-item text-secondary">PS4 GAMES</a>
-                                <a href="shop-4-com-perip.html" class="dropdown-item text-secondary">GAMING PERIPHERALS</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown pl-3">
-                            <a href="#!" class="nav-link dropdown-toggle" id="dropdown-link" data-toggle="dropdown">COMMUNITY</a>
-                            <div class="dropdown-menu" aria-labelledby="dropdown-link">
-                                <a href="blog.html" class="dropdown-item text-secondary">BLOG</a>
-                                <a href="forum.html" class="dropdown-item text-secondary">FORUM</a>
-                                <a href="https://www.facebook.com/" class="dropdown-item text-secondary">ONLINE SOCIAL</a>
-                            </div>
-                        </li>
-                        <li class="nav-item pl-3">
-                            <a href="about.html" class="nav-link">ABOUT US</a>
-                        </li>
-                        <li class="nav-item pl-3">
-                            <a href="contact.html" class="nav-link">CONTACT</a>
-                        </li>
-                        <li class="nav-item pl-3 d-lg-none d-md-block" style="position: relative;">
-                            <a href="registration.html" class="btn btn-sign-in">Sign In</a>
-                            <a href="#!" class="btn-cart show-toast">
-                                <img src="/assets/img/logo-icons/icon-cart.svg" alt="" class="img-fluid none-hover">
-                                <img src="/assets/img/logo-icons/icon-cart-hover.svg" alt="" class="img-fluid hover">
-                            </a>
-                            <a href="#!" class="btn-cart show-toast">
-                                <img src="/assets/img/logo-icons/icon-wish.svg" alt="" class="img-fluid none-hover">
-                                <img src="/assets/img/logo-icons/icon-wish-hover.svg" alt="" class="img-fluid hover">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
+            <div class="toast-body">Please Login Your Account.</div>
+        </div>
+    </div>
 
+    <nav class="navbar navbar-expand-lg sticky-top nav-bot" id="nav-bot">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <!-- <h1 class="brand-gameforce">GAMEFORCE</h1> -->
+                <img src="/assets/img/logo-icons/logo-text.svg" alt="GAMEFORCE" class="img-fluid logo-brand">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navList" aria-controls="navList" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="fas fa-bars" style="color: #4B4B4B;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navList">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pl-3">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown pl-3">
+                        <a href="#!" class="nav-link dropdown-toggle" id="game-link" data-toggle="dropdown">GFORCE SHOP</a>
+                        <div class="dropdown-menu" aria-labelledby="game-link">
+                            <a href="shop-1-computer.html" class="dropdown-item text-secondary">COMPUTER GAMES</a>
+                            <a href="shop-2-xbox.html" class="dropdown-item text-secondary">XBOX GAMES</a>
+                            <a href="shop-3-ps4.html" class="dropdown-item text-secondary">PS4 GAMES</a>
+                            <a href="shop-4-com-perip.html" class="dropdown-item text-secondary">GAMING PERIPHERALS</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown pl-3">
+                        <a href="#!" class="nav-link dropdown-toggle" id="dropdown-link" data-toggle="dropdown">COMMUNITY</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown-link">
+                            <a href="blog.html" class="dropdown-item text-secondary">BLOG</a>
+                            <a href="forum.html" class="dropdown-item text-secondary">FORUM</a>
+                            <a href="https://www.facebook.com/" class="dropdown-item text-secondary">ONLINE SOCIAL</a>
+                        </div>
+                    </li>
+                    <li class="nav-item pl-3">
+                        <a href="about.html" class="nav-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item pl-3">
+                        <a href="contact.html" class="nav-link">CONTACT</a>
+                    </li>
+                    <li class="nav-item pl-3 d-lg-none d-md-block" style="position: relative;">
+                        <a href="registration.html" class="btn btn-sign-in">Sign In</a>
+                        <a href="#!" class="btn-cart show-toast">
+                            <img src="/assets/img/logo-icons/icon-cart.svg" alt="" class="img-fluid none-hover">
+                            <img src="/assets/img/logo-icons/icon-cart-hover.svg" alt="" class="img-fluid hover">
+                        </a>
+                        <a href="#!" class="btn-cart show-toast">
+                            <img src="/assets/img/logo-icons/icon-wish.svg" alt="" class="img-fluid none-hover">
+                            <img src="/assets/img/logo-icons/icon-wish-hover.svg" alt="" class="img-fluid hover">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
         <div id="products">
             <div class="container">
                 <div class="bar">
