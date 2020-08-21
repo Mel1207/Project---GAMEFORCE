@@ -553,6 +553,7 @@ footer .footer-lower i:hover {
 
 #section-7 {
   background: #f8f8f8;
+  background: red !important;
 }
 #section-7 .container .row .col-md-6 {
   padding: 1rem;
